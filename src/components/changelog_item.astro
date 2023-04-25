@@ -1,0 +1,39 @@
+---
+const { version } = Astro.props;
+const { date } = Astro.props;
+const { desc } = Astro.props;
+---
+
+<!-- Item -->
+<div
+  class="mx-auto rounded-xl border border-slate-100 bg-slate-200 p-6 shadow-lg backdrop-blur dark:border-slate-600 dark:bg-slate-800/50"
+>
+  <div class="flex flex-col md:flex-row md:items-baseline">
+    <h1
+      class="mx-auto pb-2 w-fit bg-gradient-to-br from-gradiant-cyan to-gradiant-purple bg-clip-text text-center text-4xl font-bold text-transparent md:mx-0 md:text-left md:text-5xl"
+    >
+      {version}
+    </h1>
+    <h5
+      class="float-left mx-auto justify-center font-bold text-slate-800 dark:text-slate-200 md:mx-6"
+    >
+      {date}
+    </h5>
+  </div>
+  <div>
+    <ul class="list-outside list-disc px-6 pt-6">
+      <!-- {
+        descs.map((desc) => (
+          <li class="text-md text-center text-gray-700 dark:text-slate-300 md:text-left">
+            {desc}
+          </li>
+        ))
+      } -->
+      <li
+        class="text-md text-center text-gray-700 dark:text-slate-300 md:text-left"
+      >
+        {desc}
+      </li>
+    </ul>
+  </div>
+</div>
