@@ -1,56 +1,68 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Item from "../components/changelog_item.astro";
+import ListItem from "../components/changelog_li.astro";
 ---
 
 <Layout title="Changelog">
   <div class="container mx-auto space-y-6 p-6">
-    <Item
-      version="v4.3.2"
-      date="11. Juni 2021"
-      desc="Der Rechner wurde fälschlicherweise als Virus erkannt"
-    />
-    <Item
-      version="v4.2.2"
-      date="25. Mai 2021"
-      desc="Endnote bei der Selbstbestimmung der Prozente wird nun auf 1 Nachkommastelle gerundet"
-    />
-    <Item version="v4.2.1" date="25. Mai 2021" desc="Formatierung verändert" />
-    <Item
-      version="v4.2"
-      date="25. Mai 2021"
-      desc="Bei der Selbstbestimmung der Prozente ist man nun nicht mehr bei 2 Noten limitiert"
-    />
-    <Item
-      version="v4.1"
-      date="11. Mai 2021"
-      desc="Der Rechner verfügt nun über mehrere Hotkeys"
-    />
-    <Item
-      version="v4.0.1"
-      date="10. Mai 2021"
-      desc="Der Rechner verfügt nun über die Basisfunktion, Einreichungsnoten und Prüfungsnoten einzugeben, um Endnoten auszurechnen; Der Rechner stürzt nun nicht mehr ab, wenn man einen Großbuchstaben in der Anfangszeile eintippt"
-    />
-    <Item
-      version="v3.2"
-      date="25. April 2021"
-      desc="Die englische Sprache wird nun wieder unterstützt. Jetzt ist sie jedoch nicht störend. / The English language is now supported again. However, now it is not annoying."
-    />
-    <Item
-      version="v3.1"
-      date="25. April 2021"
-      desc="Der Rechner kann nun neu gestartet werden, ohne das Programm zu verlassen"
-    />
-    <Item
-      version="v3.0"
-      date="25. April 2021"
-      desc="Der Rechner ohne unterstützung der Englischen Sprache (einfacher und schneller)"
-    />
-    <Item
-      version="v3.0 Mutlilingual"
-      date="25. April 2021"
-      desc="Die Englische Sprache wird nun unterstützt! / The English language is now being supported!"
-    />
-    <Item version="v2.1" date="24. April 2021" desc="Text wurde geändert" />
+    <Item version="v4.3.2" date="11. Juni 2021">
+      <ListItem>Der Rechner wurde fälschlicherweise als Virus erkannt</ListItem>
+    </Item>
+    <Item version="v4.2.2" date="25. Mai 2021">
+      <ListItem>
+        Endnote bei der Selbstbestimmung der Prozente wird nun auf 1
+        Nachkommastelle gerundet
+      </ListItem>
+    </Item>
+    <Item version="v4.2.1" date="25. Mai 2021">
+      <ListItem>Formatierung verändert</ListItem>
+    </Item>
+    <Item version="v4.2" date="25. Mai 2021">
+      <ListItem>
+        Bei der Selbstbestimmung der Prozente ist man nun nicht mehr bei 2 Noten
+        limitiert
+      </ListItem>
+    </Item>
+    <Item version="v4.1" date="11. Mai 2021">
+      <ListItem>Der Rechner verfügt nun über mehrere Hotkeys</ListItem>
+    </Item>
+    <Item version="v4.0.1" date="10. Mai 2021">
+      <ListItem>
+        Der Rechner verfügt nun über die Basisfunktion, Einreichungsnoten und
+        Prüfungsnoten einzugeben, um Endnoten auszurechnen
+      </ListItem><ListItem>
+        Der Rechner stürzt nun nicht mehr ab, wenn man einen Großbuchstaben in
+        der Anfangszeile eintippt
+      </ListItem>
+    </Item>
+    <Item version="v3.2" date="25. April 2021">
+      <ListItem>
+        Die englische Sprache wird nun wieder unterstützt. Jetzt ist sie jedoch
+        nicht störend. / The English language is now supported again. However,
+        now it is not annoying.
+      </ListItem>
+    </Item>
+    <Item version="v3.1" date="25. April 2021">
+      <ListItem>
+        Der Rechner kann nun neu gestartet werden, ohne das Programm zu
+        verlassen
+      </ListItem>
+    </Item>
+    <Item version="v3.0" date="25. April 2021">
+      <ListItem>
+        Der Rechner ohne unterstützung der Englischen Sprache (einfacher und
+        schneller)
+      </ListItem>
+    </Item>
+    <Item version="v3.0 Mutlilingual" date="25. April 2021">
+      <ListItem>
+        Die Englische Sprache wird nun unterstützt! / The English language is
+        now being supported!
+      </ListItem>
+    </Item>
+    <Item version="v2.1" date="24. April 2021">
+      <ListItem>Text wurde geändert</ListItem>
+    </Item>
   </div>
 </Layout>

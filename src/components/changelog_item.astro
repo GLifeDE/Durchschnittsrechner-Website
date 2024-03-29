@@ -1,7 +1,6 @@
 ---
 const { version } = Astro.props;
 const { date } = Astro.props;
-const { desc } = Astro.props;
 ---
 
 <!-- Item -->
@@ -10,7 +9,7 @@ const { desc } = Astro.props;
 >
   <div class="flex flex-col md:flex-row md:items-baseline">
     <h1
-      class="mx-auto pb-2 w-fit bg-gradient-to-br from-gradiant-cyan to-gradiant-purple bg-clip-text text-center text-4xl font-bold text-transparent md:mx-0 md:text-left md:text-5xl"
+      class="mx-auto w-fit bg-gradient-to-br from-gradiant-cyan to-gradiant-purple bg-clip-text pb-2 text-center text-4xl font-bold text-transparent md:mx-0 md:text-left md:text-5xl"
     >
       {version}
     </h1>
@@ -22,18 +21,7 @@ const { desc } = Astro.props;
   </div>
   <div>
     <ul class="list-outside list-disc px-6 pt-6">
-      <!-- {
-        descs.map((desc) => (
-          <li class="text-md text-center text-gray-700 dark:text-slate-300 md:text-left">
-            {desc}
-          </li>
-        ))
-      } -->
-      <li
-        class="text-md text-center text-gray-700 dark:text-slate-300 md:text-left"
-      >
-        {desc}
-      </li>
+      <slot />
     </ul>
   </div>
 </div>
