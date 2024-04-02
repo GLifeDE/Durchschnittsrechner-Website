@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import Logo from "/src/assets/img/Rechner-Icon.png";
+---
+
 <header class="border-b border-b-slate-600 bg-gray-900/50">
   <nav class="container mx-auto p-6">
     <div
@@ -5,7 +10,13 @@
     >
       <!-- Logo -->
       <div class="">
-        <img src="img/Rechner-Icon.png" alt="" class="h-20" />
+        <Image
+          src={Logo}
+          alt="Durchschnittsrechner-Logo"
+          class="h-20"
+          width={80}
+          loading="eager"
+        />
       </div>
       <!-- Links -->
       <div
